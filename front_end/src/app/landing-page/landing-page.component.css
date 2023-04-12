@@ -1,26 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 .sg-form {
-    width: 320px;
+    width: 325px;
     height: 749px;
     background: #D9D9D9;
     box-shadow: 16px 18px 20px rgba(0, 0, 0, 0.25);
     border-radius: 22px;
-    /* padding: 10px 15px; */
     padding-right: 6%;
     padding-left: 6%;
-    padding-top: 12%;
+    padding-top: 6%;
     padding-bottom: 0%;
+    /* margin-right: 17%; */
+    margin-bottom: 3rem;
     justify-content: end;
+    left: 0;
+    /* position: absolute; */
+}
+
+.sg-fundo-verde {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    /* left: 59px;
+    top: -133px; */
+    padding-bottom: 14rem;
+    padding-top: 6rem;
+    background: linear-gradient(168.23deg, #54A633 47.84%, #00745E 140.12%);
+    border-radius: 100px 0px 0px 0px;
+    top: 0;
+    right: 0;
 }
 
 .sg-button {
-    background: #EDA900;
+    background: #54A633;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 22px;
     border: none;
     padding: 7px 28px;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
     text-align: center;
@@ -33,36 +51,16 @@
     transition: 0.6s;
 }
 
-.sg-button-lg {
-    font-size: 20px;
-    padding: 10px 30px;
-    background: #EDA900;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 22px;
-    border: none;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    text-align: center;
-    color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.6s;
+.sg-button:hover {
+    background: #192517;
 }
 
-.sg-button:hover {
-    background: #414442;
-}
 .sg-button:disabled {
-    background: #edaa0091;
-}
-.sg-button-lg:hover {
-    background: #414442;
+    background: #54A63391;
 }
 
 .sg-check-label {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 10px;
@@ -70,26 +68,30 @@
 }
 
 h1 {
-    font-family: 'Inter';
+    font-family: 'Bebas Neue', sans-serif;
     font-style: normal;
-    font-weight: 600;
-    font-size: 23px;
-    line-height: 28px;
+    font-weight: 400;
+    font-size: 49px;
+    line-height: 59px;
+    color: #54A633;
 }
 
 p {
-    font-family: 'Inter';
+    margin-top: 2rem;
+    font-family: 'Inter', sans-serif;
     font-weight: 300;
-    font-size: 13px;
+    font-size: 15px;
+    line-height: 18px;
     text-align: justify;
 }
 
 h2 {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
+    text-align: left;
 }
 
 input,
@@ -97,13 +99,6 @@ select {
     border-radius: 10px;
 }
 
-.sg-second-line {
-    margin-top: 5rem;
-}
-
-.sg-header-text {
-    font-size: 31px;
-}
 
 .sg-align-middle-vertical {
     position: relative;
@@ -115,45 +110,75 @@ select {
     cursor: pointer;
 }
 
+#firstline {
+    /* margin-left: ; */
+}
+
 #filine-ficol {
     margin-top: 5rem;
 }
 
-#filine-secol {
-    margin-top: 8rem;
+#coluna-direita {
+    /* margin-top: 8rem; */
     padding-right: 0;
+    /* background: linear-gradient(168.23deg, #54A633 47.84%, #00745E 140.12%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 100px 100px 0px 0px; */
 }
 
+#coluna-esquerda img {
+    width: 30rem;
+    margin-right: 0;
+    margin-bottom: 3rem;
+}
 
 @media screen and (max-width: 1200px) {
-    .sg-button-lg{
-        justify-content: center;
-        align-items: center;
-    }
-    #filine-ficol {
+    #firstline {
         margin: none;
     }
-    img{
-        width: 22rem;
-        margin-right: 0
+
+    #coluna-esquerda img {
+        width: 15rem;
+        margin: 3rem auto;
     }
+
+    #coluna-esquerda {
+        padding: 1rem 3rem;
+    }
+
+    h1 {
+        font-size: 34px;
+        line-height: 41px;
+    }
+
+    p {
+        font-size: 13px;
+        line-height: 13px;
+    }
+
+    br {
+        display: none;
+    }
+
     #filine-secol {
         margin-top: 0;
         margin-bottom: 1rem;
         padding-right: 0;
         text-align: center;
     }
-    .sg-form{
-        width: 360px;
-    }
-    .sg-second-line {
-        margin-top: 1rem;
-        text-align: center;
-    }
-    .sg-second-line img{
-        margin-top: 2.5rem;
-    }
-    .sg-align-middle-vertical{
+
+    .sg-align-middle-vertical {
         padding-bottom: 3rem;
+    }
+
+    .sg-form {
+        width: 320px;
+        height: 700px;
+        padding-right: 6%;
+        padding-left: 6%;
+        padding-top: 6%;
+        padding-bottom: 0%;
+        margin: 3rem auto;
+        justify-content: center;
     }
 }

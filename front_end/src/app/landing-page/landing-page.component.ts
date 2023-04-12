@@ -30,6 +30,6 @@ export class LandingPageComponent implements OnInit {
     var meuInput = document.getElementById("inputFocus");
     meuInput?.focus();
   }
-  privacidade(){
-  }
+  // privacidade(){
+  // }
 }

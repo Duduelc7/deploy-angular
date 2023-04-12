@@ -1,106 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-html,
-body {
-    margin: 0;
-    height: 100%;
+#main-div{
+    margin-top: 5rem;
 }
-
 h1 {
-    font-family: 'Inter';
+    font-family: 'Bebas Neue',sans-serif;
     font-style: normal;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 44px;
+    font-weight: 400;
+    font-size: 49px;
+    line-height: 59px;
+    color: #54A633;
 }
 
 h2 {
     margin-top: 2rem;
-    font-family: 'Inter';
+    font-family: 'Inter',sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 300;
     font-size: 23px;
-    line-height: 30px;
+    line-height: 28px;
+    color: #000000;
 }
-
-p {
-    margin-top: 2rem;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 16px;
-}
-
-#body {
-    padding-bottom: 17rem
+img{
+    transform: rotate(8.09deg);
 }
 
 @media screen and (max-width: 770px) {
     h1 {
         text-align: center;
-        font-size: 23px;
+        font-size: 34px;
     }
 
     h2 {
         text-align: center;
-        font-size: 16px;
-        line-height: 19px;
+        font-size: 15px;
     }
 
-    p {
-        text-align: justify;
-        font-size: 12px;
-        line-height: 15px;
+    img {   
+        transform: rotate(16.24deg);
+        width: 300px;
+        margin: auto;
     }
-
-    img{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    #right{
+        order: 0;
+        margin: 4rem 1rem;
     }
-    
-    .left-container{
-        margin: 10px;
-    }
-
-    #body {
-        padding-bottom: 0rem;
-    }
-}
-
-@media screen and (max-height: 800px) {
-    #body {
-        padding-bottom: 10rem;
-    }
-}
-
-@media screen and (max-height: 850px) {
-    #body {
-        padding-bottom: 10rem;
-    }
-}
-
-@media screen and (max-height: 750px) {
-    #body {
-        padding-bottom: 3rem;
-    }
-}
-
-@media screen and (max-height: 650px) {
-    #body {
-        padding-bottom: 0rem;
-    }
-}
-
-@media screen and (max-height: 800px) {
-    #body {
-        padding-bottom: 10rem;
-    }
-}
-
-@media screen and (min-widht: 1000px) {
-    #body {
-        padding-bottom: 10rem;
+    #left{
+        order: 1;
     }
 }
