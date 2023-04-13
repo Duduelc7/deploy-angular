@@ -51,10 +51,11 @@ img{
 #safegold-bi:hover{
     background: #192517;
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 900px) {
     h1 {
         text-align: center;
         font-size: 34px;
+        text-shadow: 1px 1px 2px #fff;
     }
 
     h2 {
@@ -79,8 +80,14 @@ img{
     #safegold-bi{
         width: 70%;
     }
-}
-
-.sg-fundo-verde {
-    margin-top: 10rem;
+    .sg-fundo-verde-mobile {
+        top: 0;
+        right: 0;
+        position: fixed;
+        z-index: -1;
+        height: 40%;
+        width: 50%;
+        background: linear-gradient(168.23deg, #54A633 47.84%, #00745E 140.12%);
+        border-radius: 0px 0px 0px 100px;
+    }
 }

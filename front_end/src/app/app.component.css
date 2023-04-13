@@ -1,4 +1,11 @@
-#sg-logo{
-    height: 40px;
+img {
+    width: 12rem;
     margin-top: 41px;
+}
+
+@media screen and (max-width: 900px) {
+    img {
+        width: 9rem;
+        margin: 2rem 0;
+    }
 }
