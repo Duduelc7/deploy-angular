@@ -24,8 +24,33 @@ h2 {
 }
 img{
     transform: rotate(8.09deg);
+    width: 30rem;
+    margin: 3rem 0;
 }
-
+#safegold-bi{
+    margin-top: 2rem;
+    width: 50%;
+    background: #54A633;
+    color: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 22px;
+    border: none;
+    padding: 7px 28px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.6s;
+    text-decoration: none;
+}
+#safegold-bi:hover{
+    background: #192517;
+}
 @media screen and (max-width: 770px) {
     h1 {
         text-align: center;
@@ -40,13 +65,18 @@ img{
     img {   
         transform: rotate(16.24deg);
         width: 300px;
-        margin: auto;
+    }
+    #main-div{
+        margin: 0;
     }
     #right{
         order: 0;
-        margin: 4rem 1rem;
+        margin: 1rem 1rem;
     }
     #left{
         order: 1;
+    }
+    #safegold-bi{
+        width: 70%;
     }
 }

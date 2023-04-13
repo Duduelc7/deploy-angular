@@ -98,16 +98,14 @@ input,
 select {
     border-radius: 10px;
 }
+label{
+    font-size: 14px;
+}
 
 
 .sg-align-middle-vertical {
     position: relative;
     top: 25%;
-}
-
-.sg-privacy {
-    text-decoration: underline;
-    cursor: pointer;
 }
 
 #firstline {
@@ -128,8 +126,7 @@ select {
 
 #coluna-esquerda img {
     width: 30rem;
-    margin-right: 0;
-    margin-bottom: 3rem;
+    margin: 3rem 0;
 }
 
 @media screen and (max-width: 1200px) {
@@ -143,7 +140,7 @@ select {
     }
 
     #coluna-esquerda {
-        padding: 1rem 3rem;
+        padding: 0 3rem;
     }
 
     h1 {
@@ -159,6 +156,9 @@ select {
     br {
         display: none;
     }
+    label{
+        font-size: 14px;
+    }
 
     #filine-secol {
         margin-top: 0;
@@ -172,13 +172,13 @@ select {
     }
 
     .sg-form {
-        width: 320px;
+        width: 300px;
         height: 700px;
         padding-right: 6%;
         padding-left: 6%;
         padding-top: 6%;
         padding-bottom: 0%;
-        margin: 3rem auto;
+        margin: 2rem auto;
         justify-content: center;
     }
 }
