@@ -129,7 +129,7 @@ label{
     margin: 3rem 0;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 950px) {
     #firstline {
         margin: none;
     }
@@ -149,7 +149,7 @@ label{
     }
 
     p {
-        font-size: 13px;
+        font-size: 10px;
         line-height: 13px;
     }
 
