@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class EmailService {
 
-  private baseURL = 'https://3377-189-45-149-234.sa.ngrok.io/landing_page/';
+  private baseURL = 'http://localhost:8000/landing_page/';
   httpHeaders = new HttpHeaders({ 'Content-Type': 'application' });
 
   constructor(private http: HttpClient) { }
