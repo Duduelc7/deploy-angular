@@ -100,4 +100,20 @@ html, body {
     #body {
         margin-bottom: 5rem;
     }
+    .sg-fundo-verde {
+        display: none;
+    }
+}
+
+
+.sg-fundo-verde {
+    z-index: -1;
+    position: absolute;
+    position: fixed;
+    width: 34%;
+    height: 100%;
+    background: linear-gradient(168.23deg, #54A633 47.84%, #00745E 140.12%);
+    border-radius: 100px 0px 0px 0px;
+    top: 0;
+    right: 0;
 }
