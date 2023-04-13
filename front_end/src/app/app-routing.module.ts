@@ -5,16 +5,13 @@ import { ThankYouComponent } from './thank-you/thank-you.component';
 
 const routes: Routes = [
   {
-    path: '', redirectTo: 'ebook', pathMatch: 'full'
-  },
-  {
-    path: 'ebook', component: LandingPageComponent
+    path: '', component: LandingPageComponent
   },
   {
     path: 'obrigado', component: ThankYouComponent
   },
   {
-    path: '**', redirectTo: 'ebook'
+    path: '**', redirectTo: ''
   }
 ];
 
