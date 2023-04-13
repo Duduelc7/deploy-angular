@@ -181,12 +181,25 @@ label{
         margin: 2rem auto;
         justify-content: center;
     }
-    .sg-fundo-verde-mobile {
+    /* .sg-fundo-verde-mobile {
         bottom: 0;
         right: 0;
         height: 100%;
         width: 100%;
         background: linear-gradient(168.23deg, #54A633 47.84%, #00745E 140.12%);
         border-radius: 100px 0px 0px 0px;
-    }
+    } */
 }
+
+.retangulo-verde {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 50px;
+    background-color: #54A633;
+  }
+  
+  .escondido {
+    display: none;
+  }

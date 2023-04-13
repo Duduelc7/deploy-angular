@@ -12,7 +12,6 @@ h1 {
     line-height: 59px;
     color: #54A633;
 }
-
 h2 {
     margin-top: 2rem;
     font-family: 'Inter',sans-serif;
@@ -51,7 +50,7 @@ img{
 #safegold-bi:hover{
     background: #192517;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
     h1 {
         text-align: center;
         font-size: 34px;
@@ -70,13 +69,7 @@ img{
     #main-div{
         margin: 0;
     }
-    #right{
-        order: 0;
-        margin: 1rem 1rem;
-    }
-    #left{
-        order: 1;
-    }
+
     #safegold-bi{
         width: 70%;
     }
@@ -89,5 +82,15 @@ img{
         width: 50%;
         background: linear-gradient(168.23deg, #54A633 47.84%, #00745E 140.12%);
         border-radius: 0px 0px 0px 100px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    #right{
+        order: 0;
+        margin: 1rem 1rem;
+    }
+    #left{
+        order: 1;
     }
 }
