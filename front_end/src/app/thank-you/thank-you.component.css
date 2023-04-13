@@ -22,9 +22,7 @@ h2 {
     color: #000000;
 }
 img{
-    transform: rotate(8.09deg);
     width: 30rem;
-    margin: 3rem 0;
 }
 #safegold-bi{
     margin-top: 2rem;
@@ -50,7 +48,14 @@ img{
 #safegold-bi:hover{
     background: #192517;
 }
-@media screen and (max-width: 950px) {
+
+@media screen and (max-width: 991px) {
+    #right{
+        order: 0;
+    }
+    #left{
+        order: 1;
+    }
     h1 {
         text-align: center;
         font-size: 34px;
@@ -62,42 +67,32 @@ img{
         text-align: center;
         font-size: 11px;
         line-height: 16px;
+        margin: 0;
     }
 
     img {   
-        transform: rotate(16.24deg);
         width: 300px;
+        margin: auto;
     }
     #main-div{
         margin-top: 5rem;
     }
 
     #safegold-bi{
-        width: 90%;
+        width: 50%;
         padding: 5px 13px;
         font-size: 14px;
+        margin-top: 1rem;
     }
+
     .sg-fundo-verde-mobile {
         top: 0;
         right: 0;
         position: fixed;
         z-index: -1;
         height: 40%;
-        width: 50%;
+        width: 15rem;
         background: linear-gradient(168.23deg, #54A633 47.84%, #00745E 140.12%);
         border-radius: 0px 0px 0px 100px;
-    }
-}
-
-@media screen and (max-width: 520px) {
-    #main-div{
-        margin-top: 0;
-    }
-    #right{
-        order: 0;
-        margin: 1rem 1rem;
-    }
-    #left{
-        order: 1;
     }
 }

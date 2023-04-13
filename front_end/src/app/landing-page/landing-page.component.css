@@ -126,17 +126,19 @@ label{
 
 #coluna-esquerda img {
     width: 30rem;
+    /* height: 24rem; */
     margin: 3rem 0;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 991px) {
     #firstline {
         margin: none;
     }
 
     #coluna-esquerda img {
-        width: 15rem;
+        width: 17rem;
         margin: 3rem auto;
+        justify-content: center;
     }
 
     #coluna-esquerda {
