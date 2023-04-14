@@ -55,6 +55,7 @@ img{
     }
     #left{
         order: 1;
+        margin-top: 3rem;
     }
     h1 {
         text-align: center;
@@ -75,11 +76,11 @@ img{
         margin: auto;
     }
     #main-div{
-        margin-top: 5rem;
+        margin-top: 2rem;
     }
 
     #safegold-bi{
-        width: 50%;
+        width: 15rem;
         padding: 5px 13px;
         font-size: 14px;
         margin-top: 1rem;
@@ -90,9 +91,20 @@ img{
         right: 0;
         position: fixed;
         z-index: -1;
-        height: 40%;
+        height: 22.5rem;
         width: 15rem;
         background: linear-gradient(168.23deg, #54A633 47.84%, #00745E 140.12%);
         border-radius: 0px 0px 0px 100px;
+    }
+}
+@media screen and (max-width: 767px) {
+    /* img{
+        padding
+    } */
+}
+@media screen and (max-width: 420px) {
+    .sg-fundo-verde-mobile {
+        height: 19.5rem;
+        width: 12rem;
     }
 }
