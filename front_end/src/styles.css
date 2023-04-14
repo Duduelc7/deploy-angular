@@ -71,16 +71,18 @@ body {
         height: 55px;
         padding-bottom: 1rem;
     }
+
     .sg-footer {
         padding: 10px;
         justify-content: center;
-        
+
     }
 
     .sg-icons-row {
         margin: auto;
     }
-    .sg-address{
+
+    .sg-address {
         text-align: center;
         font-size: 12px;
         line-height: 15px;
@@ -90,7 +92,8 @@ body {
     .sg-img-row {
         margin: auto;
     }
-    .sg-img-row img{
+
+    .sg-img-row img {
         margin: auto;
     }
 
@@ -103,6 +106,7 @@ body {
     .sg-fundo-verde {
         display: none;
     }
+
     .sg-fundo-verde-mobile {
         /* position: fixed;
         bottom: 0;
@@ -127,15 +131,18 @@ body {
         height: 45px;
         padding-bottom: 1rem;
     }
+
     .sg-address {
         text-align: center;
         font-size: 10px;
         line-height: 15px;
     }
-    .sg-icons-row{
+
+    .sg-icons-row {
         justify-content: center;
     }
 }
+
 .sg-fundo-verde {
     z-index: -1;
     position: fixed;
@@ -152,20 +159,75 @@ body {
 ::-webkit-scrollbar {
     width: 10px;
     background-color: #F5F5F5;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
+}
+
+/* Track */
+::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background-color: #ffffff;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
     background-color: #2a3d26;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #000000;
+}
+
+
+/* ----------------------------- ANIMAÇÕES ----------------------------- */
+/* Define a animação */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Aplica a animação a uma div */
+.fade-in {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(250px);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.move {
+    animation: move 2s ease-in-out forwards;
+}
+
+
+/* Define a animação de digitação */
+@keyframes digitar {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  /* Define a classe que contém os spans */
+  .digitar-animacao {
+    overflow: hidden; /* Esconde o texto que será digitado */
+    animation: digitar 2s steps(40) forwards; /* Aplica a animação */
+    white-space: nowrap; /* Faz com que o texto não quebre a linha */
   }
   
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #000000;
-  }

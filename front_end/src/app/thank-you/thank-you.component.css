@@ -96,6 +96,13 @@ img{
         background: linear-gradient(168.23deg, #54A633 47.84%, #00745E 140.12%);
         border-radius: 0px 0px 0px 100px;
     }
+    .move-img {
+        animation: none;
+    }
+    .digitar-animacao{
+        animation-name: fadeIn;
+        animation-duration: 2s;
+    }
 }
 @media screen and (max-width: 767px) {
     /* img{
@@ -112,4 +119,22 @@ img{
         margin-top: 4rem;
     }
 
+}
+
+@keyframes move-img {
+    0% {
+        transform: translateX(50px);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.move-img {
+    animation: move 2s ease-in-out forwards;
 }
