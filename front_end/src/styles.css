@@ -67,6 +67,9 @@ body {
 }
 
 @media screen and (max-width: 991px) {
+    #main-div{
+        margin-top: 10rem;
+    }
     .sg-footer {
         padding: 10px;
         justify-content: center;

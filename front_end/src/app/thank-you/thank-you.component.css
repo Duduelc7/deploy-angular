@@ -76,7 +76,7 @@ img{
         margin: auto;
     }
     #main-div{
-        margin-top: 2rem;
+        margin-top: 7rem;
     }
 
     #safegold-bi{
@@ -101,6 +101,10 @@ img{
     /* img{
         padding
     } */
+    #main-div{
+        margin-top: 4rem;
+    }
+
 }
 @media screen and (max-width: 420px) {
     .sg-fundo-verde-mobile {
