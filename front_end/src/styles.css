@@ -67,8 +67,9 @@ body {
 }
 
 @media screen and (max-width: 991px) {
-    #main-div{
-        margin-top: 10rem;
+    #footer-img {
+        height: 55px;
+        padding-bottom: 1rem;
     }
     .sg-footer {
         padding: 10px;
@@ -80,6 +81,9 @@ body {
         margin: auto;
     }
     .sg-address{
+        text-align: center;
+        font-size: 12px;
+        line-height: 15px;
         margin: auto;
     }
 
@@ -88,12 +92,6 @@ body {
     }
     .sg-img-row img{
         margin: auto;
-    }
-
-    p {
-        text-align: center;
-        font-size: 12px;
-        line-height: 15px;
     }
 
     img {
@@ -125,6 +123,15 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+    #footer-img {
+        height: 45px;
+        padding-bottom: 1rem;
+    }
+    .sg-address {
+        text-align: center;
+        font-size: 10px;
+        line-height: 15px;
+    }
     .sg-icons-row{
         justify-content: center;
     }

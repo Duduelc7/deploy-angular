@@ -11,6 +11,7 @@
         </p>
     </div>
     <div class="col-lg-6 col-sm-12 d-flex justify-content-center" id="coluna-direita">
+        <div class="sg-fundo-verde-mobile"></div>
         <div class="sg-form">
             <form #formContato="ngForm">
                 <h2>Inscreva-se agora mesmo para receber!</h2>
@@ -59,7 +60,7 @@
                         Safegold*.
                     </label>
                 </div> -->
-                <button type="submit" class="sg-button mt-5" (click)="SalvarForm(formContato.value)"
+                <button type="submit" class="sg-button" (click)="SalvarForm(formContato.value)"
                     [disabled]="!formContato.valid">Baixar
                     Agora!</button>
             </form>
