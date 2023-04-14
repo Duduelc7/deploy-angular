@@ -98,7 +98,8 @@ input,
 select {
     border-radius: 10px;
 }
-label{
+
+label {
     font-size: 14px;
 }
 
@@ -144,7 +145,8 @@ label{
     #coluna-esquerda {
         padding: 0 3rem;
     }
-    #coluna-direita{
+
+    #coluna-direita {
         position: relative;
     }
 
@@ -163,7 +165,8 @@ label{
     br {
         display: none;
     }
-    label{
+
+    label {
         font-size: 14px;
     }
 
@@ -188,18 +191,32 @@ label{
         margin: 2rem auto;
         justify-content: center;
     }
+
     .sg-fundo-verde-mobile {
         margin-top: 10rem;
         position: absolute;
         z-index: -1;
         bottom: 0;
-        left: 0;
+        right: 0;
         height: 50rem;
-        width: 100vw;
+        width: 10vw;
         background: linear-gradient(168.23deg, #54A633 47.84%, #00745E 140.12%);
         border-radius: 100px 0px 0px 0px;
     }
 }
+
 @media screen and (max-width: 575px) {
-    .sg-fundo-verde-mobile { width: 100vw;}
+    .sg-fundo-verde-mobile {
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width: 575px) and (max-width: 991px) {
+    .sg-fundo-verde-mobile {
+        width: auto;
+        right: 0;
+        left: 0;
+        border-radius: 50px 50px 0px 0px;
+    }
+
 }
