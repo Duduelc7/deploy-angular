@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class EmailService {
 
-  private baseURL = 'http://localhost:8000/landing_page/';
+  private baseURL = 'https://web-production-2969.up.railway.app/landing_page/';
   httpHeaders = new HttpHeaders({ 'Content-Type': 'application' });
 
   constructor(private http: HttpClient) { }
