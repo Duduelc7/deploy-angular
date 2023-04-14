@@ -193,7 +193,7 @@ label{
         position: absolute;
         z-index: -1;
         bottom: 0;
-        right: 0;
+        left: 0;
         height: 50rem;
         width: 100vw;
         background: linear-gradient(168.23deg, #54A633 47.84%, #00745E 140.12%);
@@ -203,15 +203,3 @@ label{
 @media screen and (max-width: 575px) {
     .sg-fundo-verde-mobile { width: 100vw;}
 }
-.retangulo-verde {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 200px;
-    height: 50px;
-    background-color: #54A633;
-  }
-  
-  .escondido {
-    display: none;
-  }
