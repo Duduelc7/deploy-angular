@@ -195,12 +195,14 @@ label{
         bottom: 0;
         right: 0;
         height: 50rem;
-        width: 30rem;
+        width: 100vw;
         background: linear-gradient(168.23deg, #54A633 47.84%, #00745E 140.12%);
         border-radius: 100px 0px 0px 0px;
     }
 }
-
+@media screen and (max-width: 575px) {
+    .sg-fundo-verde-mobile { width: 100vw;}
+}
 .retangulo-verde {
     position: fixed;
     bottom: 0;
