@@ -227,7 +227,7 @@ body {
   /* Define a classe que contém os spans */
   .digitar-animacao {
     overflow: hidden; /* Esconde o texto que será digitado */
-    animation: digitar 2s steps(40) forwards; /* Aplica a animação */
+    animation: digitar 1s steps(40) forwards; /* Aplica a animação */
     white-space: nowrap; /* Faz com que o texto não quebre a linha */
   }
   
