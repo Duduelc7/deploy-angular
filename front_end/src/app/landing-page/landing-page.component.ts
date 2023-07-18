@@ -4,6 +4,7 @@ import { Contato } from '../models/contato.model';
 import { EmailService } from '../services/email.service';
 import { NgForm } from '@angular/forms';
 import { APP_CONFIG } from '../APP_CONFIG';
+import { saveAs } from 'file-saver';
 
 @Component({
   selector: 'app-landing-page',
@@ -26,7 +27,17 @@ export class LandingPageComponent implements OnInit {
   SalvarForm(value: Contato) {
     value.landing_origem = 'Controladoria - GUIA ESSENCIAL DE FORMAÇÃO DE PREÇO'
     this.emailService.create(value).subscribe();
+    this.downloadPDF();
     this.router.navigate(['/obrigado']);
+  }
+
+  downloadPDF() {
+    const pdfURL =  APP_CONFIG.pdfURL + '/E-book Guia Essencial da Formação de Preço Controladoria.pdf';
+    const pdfFilename = 'E-book Guia Essencial da Formação de Preço Controladoria.pdf';
+    
+    fetch(pdfURL).then(res => res.blob())
+      .then(blob => saveAs(blob, pdfFilename))
+      .catch(error => console.error('Erro ao fazer download do PDF:', error));
   }
 
 }
