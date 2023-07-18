@@ -116,7 +116,8 @@ i {
     margin-top: 1.3rem;
   }
 
-  .fade-in {
+  .fade-in,
+  .move {
     animation: none;
   }
 }
